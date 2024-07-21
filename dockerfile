@@ -4,8 +4,14 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm install -g npm@latest
+RUN npm ci
 
 COPY . .
 
-RUN npm
+RUN chown -R node:node /app
+RUN npm run start
+
+EXPOSE 80
+
+CMD ["node", "index.js"]
