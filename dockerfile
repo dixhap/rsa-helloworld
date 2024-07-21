@@ -5,11 +5,10 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN npm install -g npm@latest
-RUN npm ci
+RUN npm install
 
 COPY . .
 
-RUN chown -R node:node /app
 RUN npm run start
 
 EXPOSE 80
