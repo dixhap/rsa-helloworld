@@ -1,44 +1,20 @@
-# Stage 1: Build stage
-FROM node:14 AS build
-
-WORKDIR /app
-
-COPY package*.json ./
-
-# Clear npm cache
-RUN npm cache clean --force
-
-# Remove existing node_modules if any
-RUN rm -rf node_modules
-
-# Install the latest npm version
-RUN npm install -g npm@latest
-
-# Debug: Check npm and node versions
-RUN node -v
-RUN npm -v
-
-# Install dependencies with --legacy-peer-deps
-RUN npm install --legacy-peer-deps
-
-COPY . .
-
-# Change ownership of the /app directory
-RUN chown -R node:node /app
-
-# Debug: List the contents of the /app directory
-RUN ls -la /app
-
-# Stage 2: Final stage
+# Use the official Node.js image as a base
 FROM node:14
 
+# Set the working directory
 WORKDIR /app
 
-COPY --from=build /app /app
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
-# Change ownership of the /app directory again in the final stage
-RUN chown -R node:node /app
+# Install dependencies
+RUN npm install
 
+# Copy the rest of the application code
+COPY . .
+
+# Expose port 80
 EXPOSE 80
 
-CMD ["node", "index.js"]
+# Command to run the application
+CMD ["npm", "start"]
