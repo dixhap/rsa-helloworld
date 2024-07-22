@@ -53,6 +53,7 @@ jobs:
             -Dsonar.sources=. \
             -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+            -X
           
   build-and-push-image:
     runs-on: ubuntu-latest
