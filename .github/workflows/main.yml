@@ -40,13 +40,19 @@ jobs:
         with:
           name: node-modules
 
+      - name: Install SonarQube Scanner
+        run: npm install sonarqube-scanner --save-dev
+
       - name: SonarQube analysis
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: |
-          npm install sonarqube-scanner
-          node sonarqube-scanner.js
+          npx sonarqube-scanner \
+            -Dsonar.projectKey=my-project \
+            -Dsonar.sources=. \
+            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
           
   build-and-push-image:
     runs-on: ubuntu-latest
