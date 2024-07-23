@@ -21,6 +21,7 @@ CICD nodejs GitHub account/repo with GitHub actions available.
            
 3. setup sionarqube server on azure vm and connect with it 
     -- created azure ubantu based azure vm
+    -- created inbound port rules on azure vm security group
     -- install latest java
     -- install sonarqube on server
     ### Screenshot 1
@@ -49,15 +50,20 @@ CICD nodejs GitHub account/repo with GitHub actions available.
 
 7. check dockerimage on dockerhub
    
+
+   ![setupsonarqube](![alt text](image-8.png))
+
+7. run docker image on azure vm 
+
    install docker
 
    ![setupsonarqube](![alt text](image-3.png)) 
 
-   run docker login command
+   run docker login command 
 
-   ![setupsonarqube](![alt text](image-8.png))
+   then pull image and run it 
 
-7. run docker image on azure vm
+   ![setupsonarqube](![alt text](image-12.png)) 
 
    ![setupsonarqube](![alt text](image-9.png)) 
 
