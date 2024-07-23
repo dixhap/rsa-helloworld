@@ -51,21 +51,21 @@ CICD nodejs GitHub account/repo with GitHub actions available.
 7. check dockerimage on dockerhub
    
 
-   ![setupsonarqube](![alt text](image-8.png))
+   ![docker](![alt text](image-8.png))
 
 7. run docker image on azure vm 
 
    install docker
 
-   ![setupsonarqube](![alt text](image-3.png)) 
+   ![docker](![alt text](image-3.png)) 
 
    run docker login command 
 
    then pull image and run it 
 
-   ![setupsonarqube](![alt text](image-12.png)) 
+   ![docker](![alt text](image-12.png)) 
 
-   ![setupsonarqube](![alt text](image-9.png)) 
+   ![docker](![alt text](image-9.png)) 
 
 8. sonarqube project analysis 
 
