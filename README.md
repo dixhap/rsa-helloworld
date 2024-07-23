@@ -1,5 +1,7 @@
 # nodejs-hello-world
-CICD nodejs GitHub account/repo with GitHub actions available.
+CICD nodejs GitHub account/repo with GitHub actions available.  
+
+application code repo : GitHub - fhinkel/nodejs-hello-world: Hello World example
 
 ================
 
