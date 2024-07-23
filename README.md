@@ -28,13 +28,12 @@ CICD nodejs GitHub account/repo with GitHub actions available.
 
     ![setupsonarqube](![alt text](image-2.png))
 
-    ![setupsonarqube](![alt text](image-3.png))
-
     ![setupsonarqube](![alt text](image-4.png))
 
     ![setupsonarqube](![alt text](image-1.png))
 
     ![setupsonarqube](![alt text](image-5.png))
+
     
 4. create secret token to integrate with github 
 
@@ -49,6 +48,12 @@ CICD nodejs GitHub account/repo with GitHub actions available.
    ![setupsonarqube](![alt text](image-7.png))
 
 7. check dockerimage on dockerhub
+   
+   install docker
+
+   ![setupsonarqube](![alt text](image-3.png)) 
+
+   run docker login command
 
    ![setupsonarqube](![alt text](image-8.png))
 
