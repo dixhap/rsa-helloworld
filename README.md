@@ -21,11 +21,12 @@ application code repo : GitHub Hello World example
     2. sonarqube-analysis
     3. build-and-push-image
            
-3. setup sionarqube server on azure vm and connect with it 
-    -- created azure ubantu based azure vm
-    -- created inbound port rules on azure vm security group
-    -- install latest java
-    -- install sonarqube on server
+3. setup sonarqube server on azure vm and connect with it 
+   1.  -- created azure ubantu based azure vm
+   2.  -- created inbound port rules on azure vm security group
+   3.  -- install latest java
+   4.  -- install sonarqube on server
+      
     ### Screenshot 1
     ![setupsonarqube](![alt text](image.png))
 
