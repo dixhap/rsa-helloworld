@@ -55,6 +55,8 @@ application code repo : GitHub Hello World example
    
 
    ![docker](![alt text](image-8.png))
+   
+   ![image](https://github.com/user-attachments/assets/01742be5-a3a9-4c56-8759-bb3bc4e04891)
 
 7. run docker image on azure vm 
 
