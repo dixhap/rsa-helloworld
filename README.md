@@ -1,11 +1,11 @@
 # nodejs-hello-world
 CICD nodejs GitHub account/repo with GitHub actions available.  
 
-application code repo : GitHub - fhinkel/nodejs-hello-world: Hello World example
+application code repo : GitHub Hello World example
 
 ================
 
-•	Build the following Nodejs app. GitHub - fhinkel/nodejs-hello-world: Hello World example
+•	Build the following Nodejs app Hello World example
 •	Standup Sonarcube instance
 •	Connect GitHub action to Sonarcube.
 •	Push a container image to dockerhub
